@@ -1,0 +1,29 @@
+20131017 <<<<< 127.0.0.1 - /action.php?actionkey=Admin_Index >>>>>
+14:31:01	<center>Page Execution Time: <font color='red'>0.001</font>s</center>
+20131017 <<<<< 127.0.0.1 - /action.php?actionkey=Admin_Index.Login >>>>>
+14:31:16	<center>Page Execution Time: <font color='red'>0.021</font>s</center>
+20131017 <<<<< 127.0.0.1 - /action.php?actionkey=Admin_Index.Login >>>>>
+14:37:16	<center>Page Execution Time: <font color='red'>0.03</font>s</center>
+20131017 <<<<< 127.0.0.1 - /action.php?actionkey=Admin_Index.Login >>>>>
+14:37:32	<center>Page Execution Time: <font color='red'>0.011</font>s</center>
+20131017 <<<<< 127.0.0.1 - /action.php?actionkey=Admin_Index.Login >>>>>
+14:37:36	<center>Page Execution Time: <font color='red'>0.012</font>s</center>
+20131017 <<<<< 127.0.0.1 - /action.php?actionkey=Admin_Index.Login >>>>>
+14:37:45	<center>Page Execution Time: <font color='red'>0.013</font>s</center>
+20131017 <<<<< 127.0.0.1 - /action.php?actionkey=Admin_Index.Login >>>>>
+14:38:16	<center>Page Execution Time: <font color='red'>0.016</font>s</center>
+20131017 <<<<< 127.0.0.1 - /action.php?actionkey=Admin_Index.Login >>>>>
+14:39:13	<center>Page Execution Time: <font color='red'>0.012</font>s</center>
+20131017 <<<<< 127.0.0.1 - /action.php?actionkey=Admin_Index.Login >>>>>
+14:39:45	<center>Page Execution Time: <font color='red'>0.012</font>s</center>
+20131017 <<<<< 127.0.0.1 - /action.php?actionkey=Admin_Public.Login >>>>>
+14:48:18	<center>Page Execution Time: <font color='red'>0.098</font>s</center>
+20131017 <<<<< 127.0.0.1 - /action.php?actionkey=Admin_Public.Login >>>>>
+14:49:10	<center>Page Execution Time: <font color='red'>0.024</font>s</center>
+20131017 <<<<< 127.0.0.1 - /action.php?actionkey=Admin_Public.Login >>>>>
+14:52:50	Num: 1, CostTime: 0.04, SQL:
+	Connect
+14:52:50	Num: 2, CostTime: 0.001, SQL:
+	select_db(navigation)
+14:52:50	Num: 3, CostTime: 0.002, SQL:
+	SELECT * FROM `manager` WHERE `user_name`='blackfoam'

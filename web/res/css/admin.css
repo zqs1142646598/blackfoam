@@ -1,0 +1,126 @@
+/*通用部分*/
+*{margin: 0; padding: 0;}
+body{font:12px/150% '宋体', Arial, Helvetica, sans-serif; background: #eee;}
+a, a:hover{text-decoration:none;}
+td {line-height: 150%;}
+.clear{clear:both;}
+.clearfix:after{visibility: hidden; overflow:hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+.topbar:after{visibility: hidden; overflow:hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+.menu:after{visibility: hidden; overflow:hidden; display: block; font-size: 0; content: " "; clear: both; height: 0;}
+	
+/*登录页*/
+.bd_login{background:url("/res/img/admin/login/login_bg.jpg") no-repeat scroll center top transparent;  color: #393939;}
+.bd_login .login_box{margin: 0 auto; width: 508px;}
+.bd_login .login_box h1{height: 35px; margin: 145px 0 0 0; color:#fff; text-align:center; padding-bottom:15px; font-size:24px; line-height:35px;}
+.bd_login .login_box .lu{display:block;  display:block; font-size: 12px;  height: 212px;  line-height: 12px;  padding-top: 60px;  position: relative;  width: 508px; z-index:1;}
+.bd_login .login_box .login_bg{position:absolute; z-index:0; width:100%; height:100%; left:0; top:0; background:url("/res/img/admin/login/loginbox_bg.png") no-repeat scroll 0 0 transparent; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=image, src='/res/img/admin/login/loginbox_bg.png');_background:none; }
+.bd_login .login_box .login_content{position:absolute; z-index:0; width:100%; height:100%; z-index:10; }
+.bd_login .login_box form{color: #161616;  font-family: Tahoma;  font-size: 13px;  line-height: 12px;  margin: 0 auto;  width: 310px;}
+.bd_login .login_box dl{height:40px; margin-bottom:10px;}
+.bd_login .login_box dt{ float:left; padding: 0 0 6px;  text-align: left;  width: 85px; height:30px; line-height:30px; font-size:14px;}
+.bd_login .login_box dd{float:left;}
+.bd_login .login_box .ins input{background: url("/res/img/admin/login/inp_login.gif") no-repeat scroll 0 0 transparent;  border: medium none;  color: #FFFFFF; font-size: 16px; height: 28px;  padding: 6px 6px 0 10px;  width: 204px;}
+.bd_login .login_box .sub input{background: url("/res/img/admin/login/submit_login.gif") no-repeat scroll 0 0 transparent; border: none; cursor: pointer; display: block; height: 29px;width: 73px; overflow:hidden; padding-bottom:3px;  line-height:30px; color: #eee; font-size:14px;}
+.bd_login .login_box .sub input:hover{background: url("/res/img/admin/login/submit_login.gif") no-repeat scroll 0 -29px transparent; }
+.bd_login .login_box .sub{}
+/*登录页结束*/
+	
+	
+/*结构部分*/
+	#warp{padding-bottom:20px; min-width:960px; _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<960?"960px":"");}
+		.header{}
+		.header, .header a{ color:#fff;}
+			.header_top{background: url("/res/img/admin/shared/top_bg.jpg") repeat-x scroll center top transparent;  border-bottom: 1px solid #7E7E7E;  height: 92px; }
+			.header_bottom{height:38px; background:url("/res/img/admin/shared/nav/repeat.jpg") repeat-x scroll 0 0 transparent; padding-left:20px;}
+		.main{position:relative; padding-top:20px;  background:url("/res/img/admin/shared/content_repeat.jpg") repeat-x scroll 0 0 transparent;}
+			.main_left{position:absolute; width:160px; height:500px; border: 1px solid #999;  left:1px; top:20px; border-radius:5px; background:#e4edf5;}
+			.main_right{ min-height:500px; _height:500px; border: 1px solid #999; margin:0 1px 0 170px; border-radius:5px; background:#e4edf5;}
+/*topbar*/
+	.topbar{margin: 0 auto; max-width:1260px;   position: relative; font-size:14px;}
+		.welcome,.changepasswd,.logout{display:block; float:right; margin:60px 0 0 20px; text-decoration: none; display:inline-block; height:20px; line-height:20px;}
+		.welcome{}
+		.changepasswd{}
+		.changepasswd{margin-right:20px;}
+/*导航栏*/
+	.nav{ max-width: 1260px;  position:relative; margin:0 auto; }
+		.nav a.nav_item{ color: #FFFFFF; display: inline-block; float: left; height: 37px;line-height: 35px;  padding: 0 0 0 10px;  text-decoration: none;  white-space: nowrap;}
+		.nav a.nav_item:hover, .nav a.on{background: url("/res/img/admin/shared/nav/pro_line_1.gif") repeat scroll 0 0 transparent;  }
+		.nav a.on b, .nav a.nav_item:hover b{background: url("/res/img/admin/shared/nav/pro_line_1.gif") repeat scroll right top transparent;  display: block; }
+		.nav a.nav_item b{padding: 0 20px 0 10px;}
+		a.nav_divider {background: url("/res/img/admin/shared/nav/divider.jpg") no-repeat scroll center top transparent; float: left; height: 40px; width: 15px; display: inline-block;}
+/*站点选择*/
+	.site_select{height:50px; border-bottom:1px solid #CCC;}
+		.sitelist{width:140px; height:24px; margin:10px 0 0 10px; background:#CCC; border:1px solid #666;}
+		.sitelist option{padding:2px 1px 2px 12px; height:16px;}
+/*菜单区*/
+	.menu{}
+	.menu_item{display:block; height:39px; line-height:39px; background:url(/res/img/admin/forms/step_light_left.gif) no-repeat; border-bottom:1px solid #ccc; padding-left:20px; font-size:14px; color:#222; font-weight:bold; text-decoration:none;}
+	.menu .on, .menu_item:hover{background:url(/res/img/admin/forms/step_dark_left.gif) no-repeat; color:#fff;}
+/*列表区*/
+	.list{width:100%; padding: 2x 6px; border-collapse:collapse; color:#000;}
+	.list a{color:#000;}
+		.list th{height:50px; padding:0 5px; border: 1px solid #888888; text-align: center; background:url("/res/img/admin/table/table_header_repeat.jpg") repeat-x scroll 0 0 transparent; color:#fff; font-size:13px;}
+		.list td{height:50px; text-align: center; border: 1px solid #D2D2D2; background: #ECECEC;}
+		.list .self .td_key,.list .self .td_title{color:#F00; font-weight: bold;}
+		.th_select,.td_select{width: 27px;} .th_select{} .td_select{padding-left:6px;}
+		.th_order,.td_order{width:38px;} .th_order{} .td_order{padding-left:4px;} .th_top{width:25px;}
+		.th_id,.td_id{width:80px;} .th_id{} .td_id{}
+		.th_type,.td_type{width:80px;} .th_type{} .td_type{}
+		.th_key,.td_key{width:120px;} .th_key{} .td_key{}
+		.th_url,.td_url{width:210px;} .th_url{} .td_url{}
+		.th_title,.td_title{text-align: left !important;} .th_title{padding-left:40px !important;} .td_title{padding-left:20px !important;}
+		.th_status,.td_status{width:60px;} .th_status{} .td_status{}
+		.th_time,.td_time{width: 150px;} .th_time{} .td_time{}
+		.th_op,.td_op{width:150px;} .th_op{} .td_op{}
+		.th_space,.td_space{}
+		.game_ico{width:16px; height:16px; margin-right:5px; vertical-align: middle; border:none;}
+		.game_ico:-moz-broken{-moz-force-broken-image-icon:1; width:16px;height:16px;}
+		.game_not_active{color:blue;} /*游戏无效*/
+		.server_is_recommend{color:blue;} /*推荐服务器*/
+		.server_not_open{color:red;} /*服务器未开启*/
+		/* 调试字段长度时用
+		.th_select,.td_select,.th_id,.td_id,.th_time,.td_time,.th_op,.td_op{background:#fcc;}
+		.th_order,.td_order,.th_title,.td_title,.th_status,.td_status,.th_linkobj,.td_linkobj{background:#ccf;}
+		.th_url,.td_url{background:#cfc;}*/
+/*列表顶部*/
+	.list_top{height:30px; margin:10px 0;}
+		.list_top .top_left{float:left;  height:30px;}
+		.list_top .top_right{float:right; width:250px; height:30px;}
+		.top_left a{ display: block; float:left; margin: 2px 10px 0 5px; text-align: center; }
+		.top_left a.on{ color:#f00;}
+		.btn_add{ display: block; float:right; width:110px; height:30px; margin: 2px 10px 0 5px;  color:#444; text-align: center;  text-decoration: none; background:url(/res/img/admin/table/dropdown_actions.gif) no-repeat; line-height:30px; font-size:14px; color:#000;}
+		.btn_add:hover{background:url(/res/img/admin/table/dropdown_actions.gif) no-repeat left -30px;}
+/*列表底部*/
+	.list_bottom{margin:20px 0; }
+		.list_bottom_func{}
+			.select_all{float: left; margin: 5px;}
+			.btn_order,.btn_delete{ display:block; float: left; width: 50px; height: 24px; margin: 0 10px; border: 1px solid #999; font: 12px/24px "宋体"; text-align:center;}
+			.btn_order{}
+			.btn_delete{}
+/*编辑区*/
+	.editpage_left{width:756px; border: 1px solid #999; margin:3% auto 3%; background:#fff; border-radius:5px; box-shadow:2px 2px 2px 1px #333333;}
+		.edit{}
+			.edit dl{padding-top:15px; clear:both; }
+			.edit dl:after{visibility: hidden; overflow:hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+			.edit dt{float:left; width:90px; padding-right: 10px; font:13px/20px "宋体"; text-align: right;}
+			.edit dd{float:left; width:640px;}
+			.edit .tip{color: #999;}
+			.edit .view{vertical-align: middle; height: 16px; width: 16px;}
+			.input_text{width:300px; height:22px; margin-right:10px; padding-left:5px; font:12px/18px "宋体"; border: 1px solid #ccc;}
+			.input_radio{margin-left:5px; margin-right:2px; vertical-align:middle;}
+			.rich_text,.desc_text{width:580px; border: 1px solid #ccc;}
+			.desc_text{padding:3px; font:12px/14px "宋体";}
+			.btn_post,.btn_close{ background: url("/res/img/admin/forms/form_submit.gif") no-repeat scroll 0 0 transparent;  border: medium none;  cursor: pointer;  display: block; float: left; height: 30px;  width: 80px; margin-bottom:20px; color:#fff;}
+			.btn_close{margin-left:20px;}
+	.editpage_right{float:left; width:186px; min-height:320px; margin-left:10px; padding:10px; border: 1px solid #999;}
+		.sidebar dl{margin-top:10px; font:bold 13px/28px "宋体";}
+		.sidebar dd{}
+		.sidebar input{height:20px; font: 13px/20px "宋体"; border: 1px solid #ccc;}
+/*分页区*/
+	.pager{margin: 20px 0; text-align:center; font: 12px/16px "宋体";}
+	.pager a{padding:3px 5px 2px 5px; border: 1px solid #999; color:#000; text-decoration: none;}
+	.pager a.on{border: 1px solid #999; color: #fff; background:#333;}
+	.pager .prev{margin-right:10px;}
+	.pager .next{margin-left:10px;}
+/*其他*/
+	#ui-datepicker-div{z-index: 9999 !important;}
